@@ -24,9 +24,9 @@ app.post("/exchange", async (req, res) => {
     const params = new URLSearchParams();
     params.append("grant_type", "authorization_code");
     params.append("code", code);
-    params.append("redirect_uri", "https://google.com/callback");
-    params.append("client_id", "HvzPFUcjJL4xiB4W");
-    params.append("client_secret", "kgE7JFXlzLFwBIEK1EJpGMtSB2lKiufj");
+    params.append("redirect_uri", "https://klaviyo-ihmb.onrender.com/callback");
+    params.append("client_id", "aTjddZSclzWtC7AD");
+    params.append("client_secret", "JcLGjrwS7lxWb0FhWMzjJiv1DHXn9RGR");
     params.append(
       "code_verifier",
       "CKIlvwj8_1PGp8QvkE-_SCojojX_g4GhERg5btGRt5Y"
