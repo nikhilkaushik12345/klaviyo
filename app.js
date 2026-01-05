@@ -37,7 +37,7 @@ app.post("/exchange", async (req, res) => {
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
-        "Accept": "application/json"
+        "Accept": "application/json, text/event-stream"
       },
       body: params.toString()
     });
@@ -51,7 +51,7 @@ app.post("/exchange", async (req, res) => {
       headers: {
         "Authorization": `Bearer ${token.access_token}`,
         "Content-Type": "application/json",
-        "Accept": "application/json"
+        "Accept": "application/json, text/event-stream"
       },
       body: JSON.stringify({
         jsonrpc: "2.0",
